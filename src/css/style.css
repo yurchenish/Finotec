@@ -573,7 +573,7 @@ tr {
     color: #cfcfcf; }
 
 .informa {
-  padding: 10px 17px;
+  padding: 10px 27px;
   max-height: 300px;
   min-height: 46px; }
 
@@ -662,11 +662,11 @@ label {
   width: 38px !important;
   height: 38px !important;
   position: absolute !important;
-  right: -20px; }
+  right: -5px; }
 
 .slider-322 .slick-prev::before {
   content: ' ' !important;
-  left: -20px;
+  left: -5px;
   background-image: url("../img/left-blue.png") !important;
   background-size: 38px 38px;
   width: 38px !important;
