@@ -342,7 +342,7 @@ svg#flag {
   .popup-11-close:hover, .popup-12-close:hover {
     color: #000; }
 
-.popup-11, .popup-12 .wrapper-pop {
+.popup-11 .wrapper-pop, .popup-12 .wrapper-pop {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
