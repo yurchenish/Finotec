@@ -344,13 +344,16 @@ svg#flag {
   .popup-11-close:hover, .popup-12-close:hover {
     color: #000; }
   .popup-11-close_back, .popup-12-close_back {
-    font-size: 16px; }
+    font-size: 11px; }
 
 .popup-11 .wrapper-pop, .popup-12 .wrapper-pop {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden; }
+
+.popup-12 table {
+  line-height: 1.7; }
 
 .wrapper-pop {
   padding: 53px; }
