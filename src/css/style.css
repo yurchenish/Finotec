@@ -57,7 +57,8 @@ svg#flag {
   border: 1px solid #15527C;
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-right: 40px; }
   .button:hover {
     fill: #15527C;
     text-decoration: none;
@@ -623,6 +624,12 @@ label {
     text-align: left; }
   .wah_align-2 {
     text-align: right; }
+
+.wah a {
+  color: #ffffff; }
+  .wah a:hover {
+    text-decoration: none;
+    color: #ffffff; }
 
 .wah-1 {
   color: #0b619a;
