@@ -618,10 +618,9 @@ label {
 .wah {
   color: #fff;
   margin: 15px 0;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.4;
   font-weight: bold; }
-  .wah_align-1 {
-    text-align: left; }
   .wah_align-2 {
     text-align: right; }
 
@@ -630,13 +629,6 @@ label {
   .wah a:hover {
     text-decoration: none;
     color: #ffffff; }
-
-.wah-1 {
-  color: #0b619a;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0; }
 
 .slider .slick-next {
   right: 60px !important;
