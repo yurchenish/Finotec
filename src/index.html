@@ -37,7 +37,7 @@
 						<div class="menu-main-menu-container">
 							<ul class="menu" >
 								<li class="menu-item">
-									<a href="">Главная</a>
+									<a href="http://finotec.fi">Главная</a>
 								</li>
 								<li class="menu-item">
 									<a href="#product">Продукция</a>
@@ -56,7 +56,7 @@
 						<a href="#footer" class="button button-recall">
 							Напишите нам
 						</a>
-					<a href="eng/index-eng.html">
+					<a href="http://finotec.fi/eng/index-eng.html">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="flag" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 						<circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
 						<g>
@@ -183,22 +183,22 @@
 								<img id="img228" class="img228" src="img/products/lamp/1.jpg" alt="22">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/2.jpg" alt="22">
+								<img src="./img/products/lamp/2.jpg" alt="22">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/3.jpg" alt="">
+								<img src="./img/products/lamp/3.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/4.jpg" alt="">
+								<img src="./img/products/lamp/4.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/5.jpg" alt="">
+								<img src="./img/products/lamp/5.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/6.jpg" alt="">
+								<img src="./img/products/lamp/6.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/lamp/7.jpg" alt="">
+								<img src="./img/products/lamp/7.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -250,22 +250,22 @@
 						<p>Возможны различные исполнения в зависимости от требований заказчика.</p>
 						<div class="slider-322 variable">
 							<div class="slider-item">
-								<img src="img/products/motor/1.jpg" alt="">
+								<img src="./img/products/motor/1.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/motor/2.jpg" alt="">
+								<img src="./img/products/motor/2.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/motor/3.jpg" alt="">
+								<img src="./img/products/motor/3.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/motor/4.jpg" alt="">
+								<img src="./img/products/motor/4.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/motor/5.jpg" alt="">
+								<img src="./img/products/motor/5.jpg" alt="">
 							</div>
 							<div class="slider-item">
-								<img src="img/products/motor/6.jpg" alt="">
+								<img src="./img/products/motor/6.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -756,25 +756,25 @@
 					Оставьте свою почту и наш специалист свяжется с вами
 				</div>
 				<div class="wrapper-forms">
-					<form class="form">
+					<form class="form" action="mailer/smart.php" method="POST">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
 									<span class="form-contr">
-										<input type="text" class="form-control-input" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Введите имя">
+										<input name="eman" type="text" class="form-control-input" value="" size="40" aria-required="1" placeholder="Введите имя" required>
 									</span>
 								</label>
 							</div>
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
 									<span class="form-contr">
-										<input type="text" value="" class="form-control-input" size="40" aria-required="1" placeholder="Введите e-mail">
+										<input type="email" name="email" class="form-control-input" value="" size="40" aria-required="1" placeholder="Введите e-mail" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
 									</span>
 								</label>
 							</div>
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
-										<textarea type="text" class="form-control-input informa" cols="42.9" size="40" placeholder="Введите текст сообщения"></textarea> 
+										<textarea name="text" type="text" class="form-control-input informa" cols="42.9" size="40" placeholder="Введите текст сообщения" required></textarea> 
 								</label>
 							</div>
 						</div>
@@ -815,21 +815,6 @@
 	</div>
 </section>
 
-<script>
-	$( ".popup-button-12" ).mouseenter(function(){
-		$( ".popup-button-right-2" ).css( "background-image", "url(./img/right-blue.png)" ); 
-		});
-	$( ".popup-button-12" ).mouseleave(function(){
-		$( ".popup-button-right-2" ).css( "background-image", "url(./img/right.png)" );
-	  });
-
-	$( ".popup-button-11" ).mouseenter(function(){
-		$( ".popup-button-right-1" ).css( "background-image", "url(./img/right-blue.png)" ); 
-		});
-	$( ".popup-button-11" ).mouseleave(function(){
-		$( ".popup-button-right-1" ).css( "background-image", "url(./img/right.png)" );
-	  });	
-</script>
 
 <script src="js/slick.min.js"></script>
 
@@ -838,6 +823,24 @@
 <script>
 	new WOW().init();
 </script>
+
+
+<script>
+	$( ".popup-button-12" ).mouseenter(function(){
+		$( ".popup-button-right-2" ).css( "background-image", "url(../img/right-blue.png)" ); 
+		});
+	$( ".popup-button-12" ).mouseleave(function(){
+		$( ".popup-button-right-2" ).css( "background-image", "url(../img/right.png)" );
+	  });
+
+	$( ".popup-button-11" ).mouseenter(function(){
+		$( ".popup-button-right-1" ).css( "background-image", "url(../img/right-blue.png)" ); 
+		});
+	$( ".popup-button-11" ).mouseleave(function(){
+		$( ".popup-button-right-1" ).css( "background-image", "url(../img/right.png)" );
+	  });	
+</script>
+
 
 <!-- slider -->
 <script>
@@ -857,7 +860,6 @@
 
 <script>
 	$(document).ready(function(){
-
 	$('.elem-2').on("click", function(){
 		$('.popup-2').css('visibility', 'visible');
 		$('.overlay').fadeIn(300);
@@ -988,12 +990,6 @@
 	  });
 	});
 </script>
-
-
-
-
-
-
 
 </body>
 </html>

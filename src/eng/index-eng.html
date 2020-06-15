@@ -56,7 +56,7 @@
 					<a href="#footer" class="button button-recall">
 							Write to us
 						</a>
-					<a href="../index.html" onclick="history.back();"> 
+					<a href="/" onclick="history.back();"> 
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="flag" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 							<circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
 							<path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923  C5.633,194.69,0,224.686,0,256s5.633,61.31,15.923,89.043L256,367.304L496.077,345.043z"/>
@@ -730,25 +730,25 @@
 					Please, leave your email address and our representative will contact you
 				</div>
 				<div class="wrapper-forms">
-					<form class="form">
+					<form class="form" action="../mailer/smart.php" method="POST">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
 									<span class="form-contr">
-										<input type="text" class="form-control-input" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Your name">
+										<input name="eman" type="text" class="form-control-input" value="" size="40" aria-required="1" placeholder="Your name" required>
 									</span>
 								</label>
 							</div>
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
 									<span class="form-contr">
-										<input type="text" value="" class="form-control-input" size="40" aria-required="1" placeholder="Your email">
+										<input type="email" name="email" class="form-control-input" value="" size="40" aria-required="1" placeholder="Your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
 									</span>
 								</label>
 							</div>
 							<div class="col-12 d-flex justify-content-center">
 								<label for="">
-										<textarea type="text" class="form-control-input informa" cols="42.9" size="40" placeholder="Your message"></textarea> 
+										<textarea name="text" type="text" class="form-control-input informa" cols="42.9" size="40" placeholder="Your message" required></textarea> 
 								</label>
 							</div>
 						</div>
@@ -789,17 +789,17 @@
 
 <script>
 	$( ".popup-button-12" ).mouseenter(function(){
-		$( ".popup-button-right-2" ).css( "background-image", "url(./img/right-blue.png)" ); 
+		$( ".popup-button-right-2" ).css( "background-image", "url(../../img/right-blue.png)" ); 
 		});
 	$( ".popup-button-12" ).mouseleave(function(){
-		$( ".popup-button-right-2" ).css( "background-image", "url(./img/right.png)" );
+		$( ".popup-button-right-2" ).css( "background-image", "url(../../img/right.png)" );
 	  });
 
 	$( ".popup-button-11" ).mouseenter(function(){
-		$( ".popup-button-right-1" ).css( "background-image", "url(./img/right-blue.png)" ); 
+		$( ".popup-button-right-1" ).css( "background-image", "url(../../img/right-blue.png)" ); 
 		});
 	$( ".popup-button-11" ).mouseleave(function(){
-		$( ".popup-button-right-1" ).css( "background-image", "url(./img/right.png)" );
+		$( ".popup-button-right-1" ).css( "background-image", "url(../../img/right.png)" );
 	  });	
 </script>
 
